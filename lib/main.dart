@@ -24,7 +24,7 @@ class AddEmployeeScreen extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: const Text('Add Employee'),
-        backgroundColor: const Color.fromARGB(255, 104, 189, 200),
+        backgroundColor: const Color.fromARGB(255, 0, 3, 3),
       ),
       body: Padding(
         padding: const EdgeInsets.all(16.0),
@@ -76,7 +76,10 @@ class AddEmployeeScreen extends StatelessWidget {
               ),
               child: const Text(
                 'Add Employee',
-                style: TextStyle(fontSize: 16),
+                style: TextStyle(
+                  fontSize: 16,
+                  color: Colors.black, // Correct way to specify black color
+                ),
               ),
             ),
           ],
